@@ -1,0 +1,21 @@
+{
+    "name": "profile",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "npm run dev",
+        "dev": "lite-server"
+    },
+    "lite-server": {
+        "port": 3000,
+        "files": ["*.html", "*.css", "*.js"],
+        "server": { "baseDir": "./" }
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "lite-server": "^2.6.1"
+    }
+}

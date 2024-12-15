@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Overpass;
+    src: url(assets/fonts/Overpass/static/Overpass-ExtraLight.ttf) format('truetype');
+}
+@font-face {
+    font-family: OverpassB;
+    src: url(assets/fonts/Overpass/static/Overpass-Bold.ttf) format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #131518;
+}
+h2 {
+    margin-top: 0;
+    margin-bottom: 5%;
+    color: white;
+    font-family: OverpassB;
+}
+h5 {
+    color: #7C8798;
+    font-family: Overpass;
+}
+.botao-redondo {
+    line-height: 51px;
+    border-radius: 100%;
+    background-color: #262E38;
+    border: 0;
+    height: 20%;
+    width: 51px;
+    height: 51px;
+    margin-bottom: 5%;
+    color: #7C8798;
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    transition: transform 1.0s;
+}
+.estrela {
+    line-height: 51px;
+    border-radius: 100%;
+    background-color: #262E38;
+    border: 0;
+    height: 20%;
+    width: 51px;
+    height: 51px;
+    color: #7C8798;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 8%;
+    margin-top: -2%;
+    padding: 5px;
+    transition: transform 1.1s;
+}
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131518;
+    height: 100vh;
+}
+.container {
+    border-radius: 20px;
+    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+    margin: 20%;
+    width: 412px;
+    height: 416px;
+    
+}
+.submit{
+    width: 80%;
+    height: 45px;
+    background-color: #FC7614;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    transition: transform 1.2s;
+}
+.bot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top {
+    margin: 10%;
+}
+.rate {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 5%;
+}
+.botao-redondo:hover {
+    background-color: #7C8798;
+    color: #fff;
+    transform: scale(1.1);
+}
+.submit:hover {
+    transform: scale(1.1);
+    color: #FC7614;
+    background-color: #fff;
+}
+.estrela:hover {
+    transform: scale(1.1);
+    background-color: #575e68;
+}
+.laranja, .laranja:hover {
+    background-color: #FC7614;
+    color: #fff;
+}
+.illustration {
+    margin: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.meio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.selected {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 12%;
+    width: 193px;
+    padding: 6px;
+    border-radius: 22px;
+    border: 0;
+    background-color: #262E38;
+    text-align: center;
+    color: #FC7614;
+    font-family: Overpass;
+}
+.invisible {
+    visibility: hidden;
+}
+
+@media (max-width: 1000px) {
+    .container{
+        margin: 8%;
+    }
+}

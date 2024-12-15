@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="main.js"></script>
+
+    <title>Interactive rating component</title>
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <div class="top">
+                <button class="estrela"><img src="assets/images/star.svg" alt=""></button>
+                <div>
+                    <h2>How did we do?</h2>
+                    <h5>
+                        Please let us know how we did with your support request. All feedback is appreciated
+                        to help us improve our offering!
+                    </h5>
+                </div>
+            </div> 
+
+            <div class="bot">
+                <div class="rate">
+                    <button onclick="rateSelection(1)" class="botao-redondo" id="1" >1</button>
+                    <button onclick="rateSelection(2)" class="botao-redondo" id="2" >2</button>
+                    <button onclick="rateSelection(3)" class="botao-redondo" id="3" >3</button>
+                    <button onclick="rateSelection(4)" class="botao-redondo" id="4" >4</button>
+                    <button onclick="rateSelection(5)" class="botao-redondo" id="5" >5</button>
+                </div>
+                <button class="submit" onclick="redireciona()">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

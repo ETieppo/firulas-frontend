@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Antonio;
+    src: url("/assets/font/Antonio/static/Antonio-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Spartan;
+    src: url("/assets/font/League_Spartan/static/LeagueSpartan-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: SpartanRegular;
+    src: url("/assets/font/League_Spartan/static/LeagueSpartan-Regular.ttf") format("truetype");
+}
+
+
+html, body {
+    color: #fff;
+    background: #070724;
+
+    background-image: url('/assets/background-stars.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    
+    max-width: 100vw;
+    max-height: 80vw;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Antonio;
+}
+
+h2 {
+    font-family: Antonio;
+}
+
+h3 {
+    font-family: Spartan;
+}
+
+h4 {
+    font-family: SpartanRegular;
+}
+
+p {
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+#wikipedia:hover {
+    text-decoration: underline;
+    color: rgba(216, 216, 216, 0.2);
+}
+
+#source {
+    color: rgba(216, 216, 216, 0.5);
+}
+#bordaOpaca {
+    border: 1;
+    border-color: rgba(216, 216, 216, 0.2);
+}
+
+.mercury:hover {
+    color: #419EBB;
+    border-color: #419EBB;
+    border-style: groove;
+}
+
+.venus:hover {
+    color: #EDA249;
+    border-color: #EDA249;
+    border-style: groove;
+}
+
+.earth:hover {
+    color: #6D2ED5;
+    border-color: #6D2ED5;
+    border-style: groove;
+}
+
+.mars:hover {
+    color: #D14C32;
+    border-color: #D14C32;
+    border-style: groove;
+}
+
+.jupiter:hover {
+    color: #D83A34;
+    border-color: #D83A34;
+    border-style: groove;
+}
+
+.saturn:hover {
+    color: #CD5120;
+    border-color: #CD5120;
+    border-style: groove;
+}
+
+.uranus:hover {
+    color: #1EC1A2;
+    border-color: #1EC1A2;
+    border-style: groove;
+}
+
+.neptune:hover {
+    color: #2D68F0;
+    border-color: #2D68F0;
+    border-style: groove;
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+@media (min-width: 1000px) {
+    button:hover {
+        background-color: rgba(216, 216, 216, 0.2);
+    }
+    #linkHover:hover {
+        background-color: rgba(216, 216, 216, 0.2);
+    }
+}
+
+@media (max-width: "700px"){
+    button:hover {
+        background-color: none;
+    }
+
+}
